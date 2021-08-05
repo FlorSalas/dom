@@ -58,6 +58,58 @@
     // let uno= prompt("ingrese la primera medicion de temperatura")
     // let dos= prompt("ingrese la seguda medida de temperatura")
 
-    // let promedio= promediado(this, that) => Math.floor(this,that)
+    // let promedio= ((esto,that) => Math.floor(esto + that))
     
     // console.log(promedio(uno,dos))
+
+
+/* 3) Crear una función flecha que solicite al usuario que elija entre las estaciones del año (Invierno, verano, primavera, otoño) y mostrar una imagen que haga referencia a la estación elegida.*/
+
+// let choice=  (opcion) => {
+// if (opcion==="invierno"){
+//     document.querySelector(".algo").innerHTML= "<img src= 'descarga.jpg' alt=`imagen de ${elegido}`>"
+// }else if(opcion==="otoño"){
+//     document.querySelector(".algo").innerHTML= "<img src= 'otoño.jpg' alt=`imagen de ${elegido}`>"
+// }else if(opcion==="primavera"){
+//     document.querySelector(".algo").innerHTML= "<img src= 'primavera.jpg' alt=`imagen de ${elegido}`>"
+// }else if(opcion==="verano"){
+//     document.querySelector(".algo").innerHTML= "<img src= 'verano.jpg' alt=`imagen de ${elegido}`>"
+// }
+// }
+
+// let elegido= prompt("Elija una estacion del año")
+
+// choice(elegido)
+
+
+/* 4) Crear una función flecha que calcule la edad del usuario. Luego mostrar en el html un mensaje personalizado indicando si es mayor o menor de edad.
+*/
+
+// let edad= (numero => 2021-numero)
+// let nacimiento= parseInt(prompt("Ingrese su año de nacimiento"))
+// let adulto="";
+
+// if (edad>18){
+//     adulto="mayor"
+// }else{
+//     adulto="menor"
+// }
+
+// document.querySelector(".algo").innerHTML= `usted tiene ${edad(nacimiento)}, es ${adulto} de edad`
+
+/* 5) Crear una función flecha que solicite al usuario su nombre y su animal favorito (Dar 3 o 4 opciones). Mostrar por HTML un mensaje personalizado saludando a la persona y mostrando una foto de su animal favorito. */
+
+// let nombre= prompt("Ingresa tu nombre")
+// let animal= prompt("Elija entre estos animales: Delfines, Flamencos o Libelulas")
+
+// document.querySelector(".algo").innerHTML= `bienvenido/a ${nombre}!! Esta es la foto de un ${animal} para que veas`
+// document.querySelector(".this").src= `${animal}.jpg`
+
+
+
+
+
+
+// a
+
+
