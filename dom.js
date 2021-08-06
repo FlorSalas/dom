@@ -55,12 +55,11 @@
 /*
     2) Crear una función flecha que en base a 2 datos de temperatura, indique la temperatura media (Es decir, el promedio de ambas). Mostrar el resultado con un mensaje en el HTML. Por ejemplo en un párrafo, que indique: “La temperatura media es ….”. */
 
-    // let uno= prompt("ingrese la primera medicion de temperatura")
-    // let dos= prompt("ingrese la seguda medida de temperatura")
-
-    // let promedio= ((esto,that) => Math.floor(esto + that))
+    // let uno= parseInt(prompt("ingrese la primera medicion de temperatura"))
+    // let dos= parseInt(prompt("ingrese la seguda medida de temperatura"))
+    // let promedio= ((num1, num2) => (num1+num2)/2)
     
-    // console.log(promedio(uno,dos))
+    // document.querySelector(".algo").innerHTML=`el promedio de los numeros ingresados es ${(promedio(uno,dos))}`
 
 
 /* 3) Crear una función flecha que solicite al usuario que elija entre las estaciones del año (Invierno, verano, primavera, otoño) y mostrar una imagen que haga referencia a la estación elegida.*/
@@ -105,7 +104,55 @@
 // document.querySelector(".algo").innerHTML= `bienvenido/a ${nombre}!! Esta es la foto de un ${animal} para que veas`
 // document.querySelector(".this").src= `${animal}.jpg`
 
+/* 6) Crear en el HTML un span con un ángulo del 0 al 360. Luego calcular su opuesto y mostrarlo en otro span. (Para calcular el opuesto se hace 360 - el ángulo. Por ejemplo: El opuesto de 90 es 270.) El mensaje debería ser:
+Ángulo: 90
+Opuesto: 270*/
 
+// document.querySelector(".angulo").innerHTML= `el angulo opuesto a 77 grados es ${360-77}`
+
+/* 7) Generación de mails empresariales. Le solicitamos al usuario su nombre, su apellido, su empresa y si su empresa es Argentina o no. Luego le mostraremos en el HTML un mensaje con su usuario nuevo:
+nombre.apellido@empresa.com(.ar si es argentina).*/
+
+// let nombre= prompt("Ingrese su nombre")
+// let apellido= prompt("Ingrese su apellido")
+// let empresa= prompt("Ingrese el nombre de su empresa")
+// let nacionalidad= confirm("¿Es la empresa argentina?")
+
+// if(nacionalidad){
+// document.querySelector(".angulo").innerHTML= `Su mail es (${nombre + apellido + "@" + empresa + ".com" + ".ar"})`}
+// else{
+//     document.querySelector(".angulo").innerHTML= `Lamentamos informarle que el servicio no esta disponible en su pais `
+// }
+
+
+/* 8) En un restaurante tienen menú del día según el día de la semana.
+a)  Crearemos una función flecha que reciba qué día de la semana es (Lunes a viernes) y mostraremos por HTML el menú con el nombre del plato y una imagen del mismo.
+*/
+let dia= prompt("Para ver el menu del dia ingrese el nombre del dia de hoy")
+
+let choice=  (opcion) => {
+if (opcion==="lunes"){
+    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es milanesas con pure` 
+    document.querySelector(".this").src= `milanesas con pure.jpg`
+}else if(opcion==="martes"){
+    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es fideos con salsa` 
+    document.querySelector(".this").src= `fideos con salsa.jpg`
+}else if(opcion==="miercoles"){
+    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es pizza` 
+    document.querySelector(".this").src= `pizza.jpg`
+}else if(opcion==="jueves"){
+    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es hamburguesas con papas fritas` 
+    document.querySelector(".this").src= `Hamburguesas con papas fritas.jpg`
+}else if(opcion==="viernes"){
+    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es Pastel de papa` 
+    document.querySelector(".this").src= `Pastel de papa.jpg`}
+}
+
+choice(dia)
+
+/*b) Ahora además nos piden que coloquemos debajo del menú del día los precios a los platos que se piden a la carta. Realizarlo desde el javascript.*/
+
+document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es Pastel de papa`
 
 
 
