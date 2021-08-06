@@ -65,16 +65,13 @@
 /* 3) Crear una función flecha que solicite al usuario que elija entre las estaciones del año (Invierno, verano, primavera, otoño) y mostrar una imagen que haga referencia a la estación elegida.*/
 
 // let choice=  (opcion) => {
-// if (opcion==="invierno"){
-//     document.querySelector(".algo").innerHTML= "<img src= 'descarga.jpg' alt=`imagen de ${elegido}`>"
-// }else if(opcion==="otoño"){
-//     document.querySelector(".algo").innerHTML= "<img src= 'otoño.jpg' alt=`imagen de ${elegido}`>"
-// }else if(opcion==="primavera"){
-//     document.querySelector(".algo").innerHTML= "<img src= 'primavera.jpg' alt=`imagen de ${elegido}`>"
-// }else if(opcion==="verano"){
-//     document.querySelector(".algo").innerHTML= "<img src= 'verano.jpg' alt=`imagen de ${elegido}`>"
+// if (opcion==="invierno") document.querySelector(".algo").innerHTML= "<img src= 'descarga.jpg' alt=`imagen de ${elegido}`>"
+// if(opcion==="otoño") document.querySelector(".algo").innerHTML= "<img src= 'otoño.jpg' alt=`imagen de ${elegido}`>"
+// if(opcion==="primavera") document.querySelector(".algo").innerHTML= "<img src= 'primavera.jpg' alt=`imagen de ${elegido}`>"
+// if(opcion==="verano") document.querySelector(".algo").innerHTML= "<img src= 'verano.jpg' alt=`imagen de ${elegido}`>"
 // }
-// }
+
+// en funciones flecha no es necesario poner el if como lo veniamos haciendo
 
 // let elegido= prompt("Elija una estacion del año")
 
@@ -89,7 +86,7 @@
 // let adulto="";
 
 // if (edad>18){
-//     adulto="mayor"
+    //adulto="mayor"
 // }else{
 //     adulto="menor"
 // }
@@ -128,31 +125,31 @@ nombre.apellido@empresa.com(.ar si es argentina).*/
 /* 8) En un restaurante tienen menú del día según el día de la semana.
 a)  Crearemos una función flecha que reciba qué día de la semana es (Lunes a viernes) y mostraremos por HTML el menú con el nombre del plato y una imagen del mismo.
 */
-let dia= prompt("Para ver el menu del dia ingrese el nombre del dia de hoy")
+// let dia= prompt("Para ver el menu del dia ingrese el nombre del dia de hoy")
 
-let choice=  (opcion) => {
-if (opcion==="lunes"){
-    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es milanesas con pure` 
-    document.querySelector(".this").src= `milanesas con pure.jpg`
-}else if(opcion==="martes"){
-    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es fideos con salsa` 
-    document.querySelector(".this").src= `fideos con salsa.jpg`
-}else if(opcion==="miercoles"){
-    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es pizza` 
-    document.querySelector(".this").src= `pizza.jpg`
-}else if(opcion==="jueves"){
-    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es hamburguesas con papas fritas` 
-    document.querySelector(".this").src= `Hamburguesas con papas fritas.jpg`
-}else if(opcion==="viernes"){
-    document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es Pastel de papa` 
-    document.querySelector(".this").src= `Pastel de papa.jpg`}
-}
+// let choice=  (opcion) => {
+// if (opcion==="lunes")
+//     document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es milanesas con pure` 
+//     document.querySelector(".this").src= `milanesas con pure.jpg`
+// if(opcion==="martes")
+//     document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es fideos con salsa` 
+//     document.querySelector(".this").src= `fideos con salsa.jpg`
+// if(opcion==="miercoles")
+//     document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es pizza` 
+//     document.querySelector(".this").src= `pizza.jpg`
+// if(opcion==="jueves")
+//     document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es hamburguesas con papas fritas` 
+//     document.querySelector(".this").src= `Hamburguesas con papas fritas.jpg`
+// if(opcion==="viernes")
+//     document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es Pastel de papa` 
+//     document.querySelector(".this").src= `Pastel de papa.jpg`
+// }
 
-choice(dia)
+// choice(dia)
 
 /*b) Ahora además nos piden que coloquemos debajo del menú del día los precios a los platos que se piden a la carta. Realizarlo desde el javascript.*/
 
-document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es Pastel de papa`
+// document.querySelector(".algo").innerHTML= `Hoy ${dia} el menu es Pastel de papa`
 
 
 
